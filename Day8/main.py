@@ -38,6 +38,7 @@ print(acc_count)
 
 #SECOND HALF
 
+visited = [i for i in visited if f[i][0] in ("jmp", "nop")]
 for x in visited:
     f2=copy.deepcopy(f)
 
@@ -50,3 +51,4 @@ for x in visited:
     acc_count, _, final = run_through(f2)
     if final:
         print(acc_count)
+        break
