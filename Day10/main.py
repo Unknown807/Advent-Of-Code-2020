@@ -5,7 +5,6 @@ with open("input.txt", "r") as f:
 #FIRST HALF
 
 source_volt = 0
-device_volt=max(f)+3
 
 one_diffs=0
 three_diffs=1
